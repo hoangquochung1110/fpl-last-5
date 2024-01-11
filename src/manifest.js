@@ -24,10 +24,11 @@ export default defineManifest({
   },
   content_scripts: [
     {
-      matches: ['http://*/*', 'https://*/*'],
+      matches: ['https://fantasy.premierleague.com/my-team'],
       js: ['src/contentScript/index.js'],
     },
   ],
+  host_permissions: [],
   side_panel: {
     default_path: 'sidepanel.html',
   },
